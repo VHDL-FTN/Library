@@ -8,7 +8,7 @@
 void clear_slv_reg ()
 {
 	int i;
-	for (i=0;i<100;i++)
+	for (i=0;i<50;i++)
 	{
 		Xil_Out32 (XPAR_GRAPH_IP_0_S00_AXI_BASEADDR+offset*i,0x00000000);
 	}
