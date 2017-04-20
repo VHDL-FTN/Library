@@ -46,22 +46,16 @@ unsigned int create_object (int object, int size, int horizontal, int vertical, 
 
 void draw_objects (int horizontal_min, int one_horizontal_step_lenght, int number_of_horizontal_steps, int vertical_const,int object, int color){
 
-	int hmin = horizontal_min;
-	int ohsl = one_horizontal_step_lenght;
-	int nohs = number_of_horizontal_steps;
-	int vconst = vertical_const;
-
 	unsigned int object_temp;
+	double n[number_of_horizontal_steps];
 
-	double n[nohs];
+	for (int p = 0; p <= number_of_horizontal_steps; p++){
 
-	for (int p = 0; p <= nohs; p++){
-
-		n[p] = hmin + (p-1)*ohsl;
+		n[p] = horizontal_min + (p-1)*one_horizontal_step_lenght;
 	}
 
 	for (int x=0; x<10; x++){
-		object_temp = create_object(object,2,(n[x]*8-8),((vconst*8)-8),color);
+		object_temp = create_object(object,2,(n[x]*8-8),((vertical_const*8)-8),color);
 		Xil_Out32(BASEADDR+offset*1,object_temp);
 	} //Drawing bricks from left to right side
 
