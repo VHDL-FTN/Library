@@ -15,4 +15,7 @@
 void clear_slv_reg ();
 unsigned int create_object (int, int, int, int, int);
 
+void draw_objects (int, int, int, int, int, int);
+
+
 #endif /* SRC_RETRO_LIB_H_ */
