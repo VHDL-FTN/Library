@@ -153,3 +153,13 @@ void creating_objects_game4 ()
     Xil_Out32(BASEADDR+offset*39,object_temp); // 0
 
 }
+
+void creating_objects_game1 (){
+
+	//(int hmin, int distance, int objNum, int vert_const, int object, int color, int size)
+
+	for (int y = 2; y <= 10 ; y += 4 )
+		draw_same_horizontal_objects (4, 1, 20, y, HORIZONTAL_RECTANGLE, 511, 3);
+}
+
+
