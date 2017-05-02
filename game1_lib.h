@@ -8,13 +8,6 @@
 #include <stdlib.h>
 #include "object_define.h"
 
-#define BASEADDR XPAR_GRAPH_IP_0_S00_AXI_BASEADDR
-#define offset 4
-
-
-void clear_slv_reg ();
-unsigned int create_object (int, int, int, int, int);
-
 void draw_same_horizontal_objects ( int, int, int, int);
 
 void draw_main_bar ();
