@@ -8,6 +8,7 @@
 
 #include "object_define.h"
 #include "game4_lib.h"
+#include "game1_lib.h"
 
 #define BASEADDR XPAR_GRAPH_IP_NEW_0_S00_AXI_BASEADDR
 #define offset 4
